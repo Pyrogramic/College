@@ -1,0 +1,29 @@
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Register</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header"><div class="brand"><div class="logo">CE</div><div class="brand-text"><h1>College Events</h1></div></div><nav class="nav"><a href="index.html">Home</a></nav></header>
+<main class="container">
+  <div class="card glass">
+    <h2>Register for Program</h2>
+    <form id="regForm" class="form">
+      <input type="hidden" id="eventId">
+      <input type="hidden" id="programId">
+      <label>Name<input id="student" required></label>
+      <label>Email<input id="email" type="email" required></label>
+      <label>Department<input id="dept" required></label>
+      <label>Year<input id="year"></label>
+      <label>Contact<input id="contact"></label>
+      <div id="groupBlock" style="display:none">
+        <label>Group Members (names, comma separated)<input id="members"></label>
+      </div>
+      <div class="form-actions"><button class="btn btn-primary" type="submit">Submit Registration</button></div>
+      <div id="regMsg" class="muted" style="margin-top:8px"></div>
+    </form>
+  </div>
+</main>
+<script src="app.js"></script>
+<script>App.initRegister()</script>
+</body>
+</html>

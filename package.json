@@ -1,0 +1,9 @@
+{
+  "name": "college-events-final",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "mongodb": "^6.8.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

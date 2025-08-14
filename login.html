@@ -1,0 +1,25 @@
+
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Login</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header class="site-header">
+  <div class="brand"><div class="logo">CE</div><div class="brand-text"><h1>College Events</h1></div></div>
+  <nav class="nav"><a href="index.html">Home</a></nav>
+</header>
+<main class="container">
+  <div class="card auth-card glass">
+    <h2>Administration Login</h2>
+    <form id="loginForm" class="form">
+      <label>Role<select id="roleSelect"><option value="owner">Owner</option><option value="admin">Admin</option></select></label>
+      <label>Login ID<input id="loginId" required></label>
+      <label>Password<input id="loginPass" type="password" required></label>
+      <div class="form-actions"><button class="btn btn-primary" type="submit">Sign in</button></div>
+      <div id="loginMsg" class="muted" style="margin-top:8px"></div>
+    </form>
+  </div>
+</main>
+<script src="app.js"></script>
+<script>App.initLogin()</script>
+</body>
+</html>

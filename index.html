@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>College Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<div class="page-wrap">
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo">CE</div>
+      <div class="brand-text"><h1>College Events</h1><p class="muted small">Premium • Black & Green Theme</p></div>
+    </div>
+    <nav class="nav"><a href="index.html">Home</a><a href="login.html">Login</a><a href="dashboard.html">Dashboard</a></nav>
+  </header>
+  <main class="container">
+    <section class="hero card glass">
+      <h2>Welcome to College Events</h2>
+      <p class="muted">Explore upcoming events — click an event to view programs and register.</p>
+      <div class="search-row">
+        <input id="search" placeholder="Search events..."/>
+        <select id="filter"><option value="">All</option><option value="upcoming">Upcoming</option><option value="past">Past</option></select>
+      </div>
+    </section>
+    <section id="events" class="events-grid"></section>
+  </main>
+  <footer class="site-footer"><p class="muted">Owner ID: <strong>808690</strong> • Password: <strong>OwnerOfW56</strong></p></footer>
+</div>
+<script src="app.js"></script>
+<script>App.initHome()</script>
+</body>
+</html>
